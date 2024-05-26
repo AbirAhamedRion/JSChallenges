@@ -48,6 +48,14 @@
 
 //
 // Challenge ---4
+function tipCalc(bill) {
+    const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+    return `The bill was ${bill}, the tip was ${+parseFloat(tip).toFixed(2)}, and the total value ${bill + +parseFloat(tip).toFixed(2)}`;
+}
+
+console.log(tipCalc(275));
+console.log(tipCalc(40));
+console.log(tipCalc(430));
 
 
 
